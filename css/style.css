@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,36 +6,42 @@
     text-decoration: none;
     list-style: none;
 }
-.f16{
-    font-size: 20pt!important;
+
+.f16 {
+    font-size: 25pt !important;
 }
-body{
-    height: 100vh;
+
+body {
+    height: 100vh ;
     width: 100%;
-    background-color: #fdfdfd;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-} 
-header{
-    height: 60%;
+}
+
+header {
+    height: 70%;
     width: 100%;
+    gap: 40px;
     background-color: blueviolet;
     background-image: url(../img/restau.webp);
     background-position: center;
     background-size: cover;
 }
-.portada{
-    height: 70%;
+
+.portada {
+    height: 65%;
     width: 100%;
     position: relative;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.493),rgba(255, 255, 255, 0) 90%);
-    & .saludo{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.493), rgba(255, 255, 255, 0) 90%);
+
+    & .saludo {
         position: absolute;
-        color: cornsilk;
+        color: rgb(247, 240, 211);
         bottom: 5%;
         left: 10%;
         margin-bottom: 20px;
     }
-    .buscador{
+
+    .buscador {
         position: absolute;
         bottom: -20px;
         right: 5%;
@@ -43,17 +49,19 @@ header{
         margin: auto;
         height: 40px;
         width: 80%;
-        background-color: burlywood;
+        background-color: rgb(255, 255, 255);
         display: flex;
-        box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.6 );
+        box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.6);
         overflow: hidden;
-        & input[type="search"]{
+
+        & input[type="search"] {
             width: calc(100% - 80px);
             border: none;
             outline: none;
             padding: 10px;
         }
-        & input[type="submit"]{
+
+        & input[type="submit"] {
             width: 40px;
             border: none;
             outline: none;
@@ -61,36 +69,113 @@ header{
             cursor: pointer;
             transition: all .3s ease-in-out;
         }
-        & input[type="submit"]:hover{
-            transform: scale(1.2);  
+
+        & input[type="submit"]:hover {
+            transform: scale(1.2);
         }
-        & .icono{
+
+        & .icono {
             width: 40px;
             background-color: rgb(6, 218, 157);
             display: grid;
             place-items: center;
         }
-        
+
     }
 }
 
-nav.categorias{
-    height: 30%;
+nav.categorias {
+    height: 40%;
     width: 100% auto;
-    background-color: cornsilk;
+    background-color: rgb(255, 255, 255);
     padding: 30px;
+    padding-top: 50px;
     display: flex;
     justify-content: flex-start;
     gap: 20px;
     overflow: hidden;
     overflow-x: scroll;
-    & .btn_categoria{
+
+    & .btn_categoria {
         height: 70px;
         flex: 0 0 90px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        font-size: 1.2em;
+        font-size: 1.1em;
+        color: rgba(117, 116, 116, 0.726);
     }
+
+}
+
+main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+
+    .offers {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 90%;
+        margin: auto;
+        padding-bottom: 40px;
+        gap: 20px;
+
+    }
+
+    & .ofertas {
+        position: relative;
+        display: flex;
+        background-color: #0d3ec4;
+        height: 160px;
+        width: 100%;
+        border-radius: 15px;
+        box-shadow: 10px 5px 20px -10px rgba(0, 0, 0, 0.603);
+
+        & .img {
+            background-image: url(../img/restau.webp);
+            background-position: center;
+            background-size: cover;
+            height: 100%;
+            width: 40%;
+            border-radius: 15px;
+        }
+
+        & .desc {
+            position: absolute;
+            background-color: #ffffff;
+            right: 0;
+            width: 65%;
+            height: 100%;
+            border-radius: 0 0 0 15px;
+        }
+    }
+
+    & span {
+
+        font-size: 1.3em;
+        color: rgb(117, 116, 116);
+    }
+}
+
+::-webkit-scrollbar {
+    height: 0px;
+}
+
+::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #0d3ec4;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ce1c1c;
 }
