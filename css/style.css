@@ -130,8 +130,8 @@ main {
         height: auto;
         width: 85%;
         margin: auto;
-        padding-bottom: 10px;
-        gap: 20px;
+        padding-bottom: 50px;
+        gap: 50px;
 
     }
 
@@ -151,6 +151,13 @@ main {
             height: 100%;
             width: 40%;
             border-radius: 15px;
+            position: relative;
+            & span{
+                color:#ffffff;
+                position: absolute;
+                right: 15%;
+                top: 10px;
+            }
         }
 
         & .desc {
