@@ -11,25 +11,36 @@
     --verde: rgb(6, 218, 157);
     --gris: rgb(128, 126, 126);
 }
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
 p {
     color: #949494;
 }
+
 .verde {
     color: rgb(6, 218, 157);
 }
-.rojo{
+
+.rojo {
     color: rgba(218, 13, 6, 0.7);
 }
-.naranja{
+
+.naranja {
     color: rgba(218, 109, 6, 0.7);
 }
-.amarillo{
+
+.amarillo {
     color: rgba(243, 227, 4, 0.8);
 }
 
-.f20{
+.f20 {
     font-size: 20pt;
 }
+
 .f25 {
     font-size: 25pt !important;
 }
@@ -43,7 +54,7 @@ body {
     width: 100% !important;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     overflow-x: hidden;
-    
+
 }
 
 header {
@@ -94,7 +105,7 @@ header {
                 border: none;
                 outline: none;
                 background-color: floralwhite;
-                cursor: pointer;
+
                 transition: all .3s ease-in-out;
             }
 
@@ -172,7 +183,7 @@ main.comida {
     position: relative;
     overflow: hidden;
 
-    
+
 }
 
 nav.categorias {
@@ -196,6 +207,7 @@ nav.categorias {
         justify-content: center;
         font-size: 1.1em;
         color: rgba(117, 116, 116, 0.726);
+        cursor: default;
     }
 
 }
@@ -224,6 +236,7 @@ main {
     & .oferta {
         position: relative;
         display: flex;
+        flex: 0 0 160px;
         height: 160px;
         width: 100%;
         border-radius: 10px;
@@ -303,14 +316,16 @@ main {
     & span {
         color: rgb(128, 126, 126);
     }
-    .datos{
+
+    .datos {
         margin: 30px;
         display: flex;
         justify-content: space-around;
         align-items: center;
         width: 90%;
         height: 100%;
-        .icon{
+
+        .icon {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -318,7 +333,8 @@ main {
             gap: 10px;
         }
     }
-    .descripcion-restaurante{
+
+    .descripcion-restaurante {
         margin: 0 30px 30px 30px;
     }
 }
@@ -353,6 +369,7 @@ header.restaurante {
             box-shadow: 0px 30px 35px -10px rgba(0, 0, 0, 0.212);
         }
     }
+
     .informacion {
         height: 20%;
         width: 100%;
@@ -361,7 +378,8 @@ header.restaurante {
         justify-content: space-between;
         padding: 30px;
         align-items: center;
-        p{
+
+        p {
             margin-top: 7px;
         }
     }
@@ -369,17 +387,20 @@ header.restaurante {
 
 @media screen and (orientation=landscape) {
     main {
+        padding:
+            20px;
+
         .offers {
+            width: 100%;
+            display: flex !important;
             flex-direction: row;
             flex-wrap: wrap;
-
-            .oferta {
-                height: 160px;
-                flex: 0 0 calc(50% - 15px);
-            }
+        }
+        a {
+            height: 160px;
+            flex: 0 0 calc(50% - 15px)
         }
     }
-
 }
 
 @media screen and (orientation=portrait) {}
