@@ -57,7 +57,7 @@ body {
 
 }
 
-header {
+header.index {
     height: 70%;
     width: 100%;
     gap: 40px;
@@ -126,54 +126,7 @@ header {
 }
 
 header.comida {
-    position: relative;
-    height: 50%;
-    width: 100%;
-    background-image: url(../img/plato_carta.jpg);
-    background-position: center;
-    background-size: cover;
-    z-index: 100;
     
-    
-    .portada-comida {
-        height: 86%;
-        width: 100%;
-        position: relative;
-        background: linear-gradient(0deg, rgb(255, 254, 254) 1%, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 99%);
-    }
-
-    .descripcion-comida {
-        position: relative;
-        height: 15%;
-        width: 100% auto;
-        background-color: rgb(255, 255, 255);
-
-        p {
-            font: 1.5em sans-serif;
-            font-weight: bolder;
-            width: 80%;
-            padding: 15px;
-            position: fixed;
-        }
-        .precio {
-            z-index: 100;
-            position: absolute;
-            display: grid;
-            place-items: center;
-            height: 60px;
-            width: 100px;
-            background-color: rgb(6, 218, 157);
-            border-radius: 15px 0;
-            color: #ffffff;
-            right: 30px;
-            bottom: 40px;
-            font: 1.4em sans-serif;
-            font-weight: bolder;
-            box-shadow: 0px 30px 35px -10px rgba(0, 0, 0, 0.212);
-        
-        }
-     
-    }
 }
 
 main.comida {
@@ -408,8 +361,15 @@ nav.restaurant{
         border: 0;
         background-color: transparent;
         cursor: pointer;
+        color: var(--gris);
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
     button:hover{
+        font-weight: 700;
+        border-top: solid 3px var(--verde);
+    }
+    button.selected{
+        font-weight: bolder;
         border-top: solid 3px var(--verde);
     }
 }
