@@ -516,22 +516,28 @@ main.menu {
         max-width: 200px;
         height: 100%;
         max-height: 200px;
+        border-radius: 50%;
       }
       span {
         position: absolute;
-        display: grid;
-        place-items: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         height: 35px;
         width: 55px;
         background-color: rgb(6, 218, 157);
         border-radius: 15px 0;
-        right: 15px;
+        right: 25px;
         bottom: 25px;
         color: #ffffff;
         font: 0.9em sans-serif;
         font-weight: bolder;
         box-shadow: 0px 20px 20px -10px rgba(0, 0, 0, 0.788);
+        i{
+          font-size: 13pt;
+        }
       }
+      
     }
     .desc {
       width: 65%;
